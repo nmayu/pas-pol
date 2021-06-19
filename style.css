@@ -1,0 +1,839 @@
+@charset "UTF-8";
+
+html{
+	font-family: sans-serif;
+	-webkit-text-size-adjust:100%;
+	scroll-behavior: smooth;
+}
+body{
+	margin:0;
+}
+
+article,aside,details,figcaption,figure,figure,footer,header,main,nav,section,summary{
+	display:block;
+}
+h1,h2,h3,h4,h5,h6{
+	letter-spacing: 0.1em;
+}
+h1{
+	font-sizing:2em;
+	display:block;
+	margin-block-start:0.67em;
+	margin-block-end:0.67em;
+	margin-inline-start:0px;
+	margin-inline-end:0px;
+	font-weight:bold;
+}
+h2{
+	display:block;
+	margin-block-start:0.83em;
+	margin-block-end:0.83em;
+	margin-block-start:0px;
+	margin-block-end:0px;
+	font-weight:bold;
+}
+img{
+	border:0;
+}
+a{
+	display: block;
+	background:transparent;
+	color:#13191b;
+	text-decoration: none;
+}
+a:acthive
+a:hover{
+	outline: 0;
+}
+small{
+	font-size: 80%;
+}
+sub,sup{
+	font-size: :75%;
+	line-height:0;
+	position:relative;
+	vertical-align: baseline;
+}
+ul{
+	display:block;
+	list-style:none;
+}
+li{
+	text-align:border-box;
+}
+section{
+	display:block;
+}
+p{
+	display:block;
+	margin-block-start:1em;
+	margin-blockend:1em;
+	margin-inline-start:0px;
+	margin-inline-end:0px;
+}
+button{
+	color:inherit;
+	font:inherit;
+	margin:0;
+	overflow:visible;
+	text-transform: none;
+}
+*{
+	box-sizing: border-box;
+}
+*, :after, :begore{
+	background-repeat: no-repeat;
+}
+div{
+	display:block;
+}
+footer{
+	display: block;
+}
+
+
+
+/*カルーセル*/
+
+.mainVisual{
+	position:relative;
+	width:100%;
+	height:680px;
+	margin:0 calc(50% - 50vw);
+}
+.mainVisual .clImg img{
+	width:100%;
+	height:100%;
+	object-fit:conver;
+	position:absolute;
+}
+
+
+
+
+/*
+-----Header*/
+.l-header{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.l-header:after{
+	clear:both;
+	content:"";
+	display:block;
+}
+
+/*ロゴ*/
+.l-header .m-siteLogo{
+	float:left;
+	margin-top: 50px;
+	margin-left:7%;
+}
+.m-siteLogo{
+	margin:0;
+}
+.m-siteLogo a{
+	display:block;
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	background:url(https://nmayu.github.io/pas-pol/siteLogo-pc@2x.png) no-repeat;
+	width:266px;
+	height:72px;
+	background-size:266px 72px;
+}
+.l-header .m-navigation{
+	float:right;
+	margin-top:75px;
+	margin-right:7%;
+}
+.m-navigation ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	font-size:0;
+	letter-spacing:-1em;
+	word-spacing:-1em;
+}
+.m-navigation li:first-child{
+	margin-left: 0;
+}
+.m-navigation li{
+	display:inline-block;
+	vertical-align:top;
+	font-size: 1rem;
+	letter-spacing: normal;
+	word-spacing:normal;
+	margin-left: 40px;
+}
+.m-navigation li a{
+	color:#fff;
+	font-size: 14px;
+	font-family: "Gill Sans Std Book",sans-serif;
+	letter-spacing: 0.1em;
+	padding-bottom: 8px;
+	border-bottom: 2px solid transparent;
+}
+nav.m-navigation.js-navigation ul li:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom:8px;
+}
+/*スマホメニュー*/
+.collapse, .navbar{
+	display: none;
+}
+
+
+
+/*
+mainVisual*/
+.m-mainVisual{
+	background-color: #b7c0c7;
+	width:100%;
+	height:295px;
+	max-height:900px;
+	position:relative;
+	overflow:hidden;
+}
+.m-mainVisual-logo{
+	display: none;
+}
+.m-mainVisual-arrow{
+	background:url(https;//nmayu.io.pas-pol/mainVisual-arrow@2x.png) no-repeat;
+	width: 22px;
+	height: 13px;
+	background-size: 22px 13px;
+	position: absolute;
+	bottom:60px;
+	left:50%;
+	transform:translateX(-50%);
+}
+div{
+	display:block;
+}
+.m-mainVisual-image{
+	width:100%;
+	height: 100%;
+	position:relative;
+}
+
+
+
+/*
+slider*/
+/*#metaslider_19{
+	width:100%;
+	position:relative;
+}
+#metaslider_19 img{
+	width:100%;
+	position: absolute;
+}*/
+.metaslider{
+	position:relative;
+	z-index:0;
+}
+.metaslider .nav-hidden .flexslider{
+	margin-bottom:0;
+}
+.metaslider .flexslider{
+	background:none;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+	border:0;
+	margin:0 0 40px 0;
+	max-width:none;
+	max-height:none;
+}
+.metaslider, .flexslider ul{
+	border:0;
+	margin:0;
+	list-style-type: none;
+	list-style:none;
+	padding: 0;
+	line-height: normal;
+	max-width: none;
+	max-height: none;
+}
+.flexslider{
+	margin:0 0 60px;
+	background:#fff;
+	border:4px solid #fff;
+	position:relative;
+	border-radius:4px;
+	zoom:1;
+	zoom:1;
+}
+.metaslider .flexslider .slides li{
+	border:0;
+	margin:0;
+	list-style-type: none;
+	list-style: none;
+	padding:0;
+	line-height: normal;
+	max-width: none;
+	max-height: none;
+}
+.slides,.flex-control-nav,.flex-direction-nav{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.slides:after{
+	content:".";
+	display:block;
+	clear:both;
+	visibility:0;
+	line-height:0;
+	height:0;
+}
+.metaslider .slides img{
+	width:100%;
+	display:block;
+}
+.metadlider img{
+	height:auto;
+	padding:0;
+	margin:0;
+}
+.slides:after{
+	content:".";
+	display:block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height:0;
+}
+.m-mainVisual-logo{
+	display:none;
+}
+.m-mainVisual-overlay{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(https;//nmayu.io.pas-pol/mainVisual-overlay@2x.png)no-repeat;
+	background-size:contain;
+	background-position:0 bottom;
+}
+
+
+.slick01{
+    margin:0 auto;
+}
+.slick-slide img{
+    margin: 0 auto;
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+}
+
+
+
+/*
+Concept*/
+.l-section{
+	width:100%;
+	background-color: #f6f6f6;
+	padding-top:110px;
+	padding-bottom:110px;
+}
+.l-container .l-container--narrow{
+	max-width: 786px;
+}
+.l-container{
+	max-width:940px;
+	margin-right:auto;
+	margin-left:auto;
+	box-sizing:content-box;
+	padding:0.7%;
+}
+.l-row{
+	font-size:0;
+	letter-spacing: -1em;
+	word-spacing: -1em;
+	margin-right: -10px;
+    margin-left: -10px;
+	box-sizing:content-box;
+}
+.l-container.l-container--narrow .l-row{
+	margin-right:-15px;
+	margin-left:-15px;
+}
+.m-concept{
+	margin:0 auto;
+}
+
+.l-container.l-container--narrow .l-row:after{
+	clear:both;
+	content:"";
+	display:block;
+}
+.m-concept-title{
+	text-align:center;
+	font-size:44px;
+	font-weight:normal;
+	letter-spacing: 0.1em;
+	margin:0 auto;
+}
+.m-concept-read--index{
+	max-width:370px;
+	margin-top:50px;
+}
+.m-concept-read{
+	font-size:20px;
+	margin:70px auto 0 auto;
+}
+.m-conceot-read>*{
+	margin-top:1em;
+	margin-bottom:0;
+}
+.m-concept-siteLogo{
+	overflow: hidden;
+	 overflow-x: hidden;
+	 overflow-y: hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	background:url(https;//nmayu.io.pas-pol/concept-siteLogo@2x.png) no-repeat;
+	width:211px;
+	height:54px;
+	background-size: 211px 54px;
+	margin:35px auto;
+}
+.m-productList-more{
+	display: none;
+}
+
+
+
+/*
+pruduct*/
+.l-section.l-section--product{
+	background-color: #fff;
+}
+.l-container .l-container--narrow{
+	max-width:786px;
+}
+
+.m-sectionTitle-text{
+	float:left;
+	font-size: 30px;
+	font-weight: normal;
+	margin:0;
+	background:url(https;//nmayu.io.pas-pol/sectionTitle-underLine@2x.png) no-repeat;
+	background-size: 68px 8px;
+	background-position: 0 bottom;
+	padding-bottom: 17px;
+	line-height: 1;
+	font-family: "Gill Sans Std Book",sans-serif;
+	letter-spacing: 0.1em;
+}
+.m-sectionTitle-button{
+	float:right;
+}
+.m-button{
+	display:inline-block;
+	width:162px;
+	height:46px;
+	line-height:48px;
+	font-size:14px;
+	color:#13191b;
+	border:1px solid #13191b;
+	text-align: center;
+	font-family: "Gill Sans Std book",sans-serif;
+	letter-spacing: 0.1em;
+}
+.m-button--more{
+	background:url(https;//nmayu.io.pas-pol/button-arrow@2x.png) no-repeat;
+	background-size: 8px 12px;
+	background-position: 140px 50%;
+}
+a.m-button:hover {
+    background-color: black;
+}
+.m-button--more:hover{
+    color: #fff;
+    background: url(https;//nmayu.io.pas-pol/button-arrow-hover@2x.png) no-repeat;
+    background-size: 8px 12px;
+    background-position: 140px 50%;
+}
+
+.l-container .l-container--narrow [class*="l-grid-"]{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.l-container .l-container--narrow .l-container:after{
+	clear:both;
+	content:"";
+	display:block;
+}
+.m-productList-item{
+	margin-top:60px;
+}
+a.m-productList-item-link:hover {
+    opacity: 0.5;
+}
+.l-grid-4{
+	width:33.33333%;
+}
+.m-productList-item-link{
+	display:block;
+}
+.m-productList-item-image img{
+	width:100%;
+	height:auto;
+	vertical-align:top;
+}
+.m-productList-item-title{
+	margin:20px 0 0;
+	padding:0 20px;
+	font-size: 20px;
+}
+.m-productList-item-description{
+	margin:10px 0 0;
+	padding:0 20px;
+	font-size:14px;
+	color:#656c6e;
+}
+[class*="l-grid-"]{
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	*zoom:1;
+	font-size: 1rem;
+	letter-spacing: normal;
+	word-spacing: normal;
+	padding-right: 10px;
+	padding-left: 10px;
+	min-height: 1px;
+}
+
+.m-productList-more{
+	display:none;
+}
+
+
+/*
+News*/
+.m-newsList{
+	margin-top:80px;
+}
+.m-newsList-item{
+	margin-top:60px;
+}
+.m-newsList-item-link{
+	display:block;
+}
+a.m-newsList-item-link.l-row:hover {
+    opacity: 0.5;
+}
+.l-grid-5{
+	width:41.66667%;
+}
+.l-grid-7{
+	width:58.33333%;
+}
+.m-newsList-item-image img{
+	width:100%;
+	height:auto;
+	vertical-align: top;
+}
+.m-newsList-item-title{
+	margin:0;
+	font-size:18px;
+}
+.m-newsList-item-date{
+	color:#656c6e;
+	font-size: 12px;
+	margin:5px 0 0;
+	font-family: "Gill Sans Std Book",sans-serif;
+}   
+.m-newsList-item-description{
+	font-size: 13px;
+	color: #656c6e;
+	margin:20px 0 0;
+}
+.m-newsList-more{
+	display: none;
+}
+
+/*
+Share*/
+.l-share{
+	background-color: #fff;
+	position:relative;
+	padding:35px 0;
+}
+.m-backTop{
+	overflow: hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	background: url(https;//nmayu.io.pas-pol/backTop@2x.png) no-repeat;
+	background-size: 50px 50px;
+	width:50px;
+	height:50px;
+	cursor:pointer;
+}
+.l-share .m-backTop{
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left: -25px;
+	margin-top: -25px
+}
+.l-container .l-container--full{
+	max-width:100%;
+	padding:0;
+}
+.m-shareButtons{
+	font-size: 0;
+	word-spacing: -1em;
+	word-spacing: -1em;
+	text-align: center;
+}
+.m-shareButtons-item{
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	*zoom:1;
+	font-size: 1rem;
+	letter-spacing: normal;
+	word-spacing: normal;
+	margin:0 15px;
+}
+.m-button--facebook{
+	color:#4871a9;
+	border-color:#4871a9;
+}
+a.m-button.m-button--facebook:hover {
+    color:#fff;
+    background-color: #2f9bcd;
+}
+.m-button--twitter{
+	color:#70bbd3;
+	border-color:#70bdd3;
+}
+a.m-button.m-button--twitter:hover {
+    color: #fff;
+    background-color: #70bbd3;
+}
+.m-button--hatena{
+	color:#2f9bcd;
+	border-color: #2f9bcd;
+}
+a.m-button.m-button--hatena:hover {
+    color: #fff;
+    background-color: #2f9bcd;
+}
+.m-shareButtons-item--line{
+	display:none;
+}
+.m-button--line{
+	color: #8ec09d;
+	border-color: #8ec09d; 
+}
+
+/*
+FooterNav*/
+.l-footerNav{
+	background-color: #939899;
+	padding:30px 0;
+	text-align: center;
+}
+nav.m-navigation.m-navigation--center ul li:hover {
+    opacity: 0.5;
+}
+.l-footer{
+	background-color: #656c6e;
+	padding:35px 0;
+}
+.l-footer .l-container:after{
+	clear:both;
+	content:"";
+	display:block;
+}
+.l-footer .m-siteLogo{
+	float: left;
+}
+.m-siteLogo--small a{
+	bckground:url(https;//nmayu.io.pas-pol/siteLogo-small@2x.png) no-repeat;
+	width:90px;
+	height:89px;
+	background-size: 90px 89px;
+}
+.m-siteLogo a{
+	display:block;
+	overflow:hidden;
+	text-indent:100%;
+	white-space: nowrap;
+	background:url(.https;//nmayu.io.pas-pol/siteLogo-pc@2x.png)no-repeat;
+	width:266px;
+	height:72px;
+	background-size: 266px 72px;
+}
+.l-footer .m-copyRight{
+	float:right;
+	margin-top:35px;
+}
+.m-copyRight{
+	margin:0;
+	font-size: 12px;
+	color: #fff;
+	font-family: "Gill Sans Std Book",sans-serif;
+	letter-spacing: 0.1em;
+}
+
+
+
+
+/*
+メディアタイプ*/
+@media screen and (max-width:767px) {
+.body{
+	font-size: 13px;
+}
+.m-concept-read p{
+	font-size: 1.1rem;
+}
+.m-newsList-more{
+	display:block;
+	text-align: center;
+	margin-top: 40px;
+}
+.l-grid-12{
+	width:100%;
+}
+.m-siteLogo{
+	display: none;
+}
+.l-header .m-navigation{
+	margin:0 auto;
+}
+.navul{
+	display: none;
+}
+.container-fluid p{
+	color: #333;
+	margin:0.4rem;
+	font-weight: 200;
+}
+.collapse, .navbar{
+	display: block;
+	width:100%;
+	padding:0;
+}
+.text-muted{
+	display: block;
+	color:#fff!important;
+}
+.bg-dark{
+	opacity: 0.8;
+}
+.bg-dark a{
+	padding:3vw;
+	border-bottom: 1px solid #fff;
+	font-weight: 200;
+}
+.navbar-dark .navbar-toggler{
+	border-color: transparent;
+}
+.navbar-toggler:focus{
+	box-shadow:0 0 0 0;
+}
+.navbar-dark .navbar-toggler-icon{
+	background-image: url(https;//nmayu.io.pas-pol/navigation-toggle@2x.png);
+	background-size: 18px;
+}
+.m-sectionTitle-button{
+	display: none;
+}
+.l-container{
+	width:95%;
+}
+.m-concept{
+	text-align: center;
+}
+.m-sectionTitle .l-row{
+	width:100%;
+	margin:0;
+}
+.l-grid-12{
+	width: 100%;
+}
+.m-productList-item{
+	margin-top:40px;
+}
+.m-productList-item-title{
+	margin-top:0;
+	font-size: 1.1rem;
+}
+.m-productList-more{
+	display: block;
+}
+.m-newsList{
+	margin:0px;
+}
+.m-newsList-item{
+	margin-top:40px;
+}
+.m-newsList-item-text{
+	margin-top: 20px;
+}
+.m-newsList-item-title{
+	letter-spacing: 0.2rem;
+	font-size: 1.1rem;
+}
+.m-newsList-item-description{
+	display: none;
+}
+.m-shareButtons{
+	display: flex;
+	margin:0 auto;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.m-shareButtons-item{
+	width:45%;
+	margin:0;
+	margin-bottom: 10px;
+}
+.m-shareButtons-item--line{
+	display: block;
+}
+.l-footerNav{
+	display: block;
+}
+.m-navigation--center ul li{
+	display: block;
+	margin:0;
+	border-bottom: 1px solid #fff;
+	padding:3vw;
+}
+.l-footerNav{
+	padding: 0;
+	border-bottom:1px solid #fff;
+}
+.m-siteLogo--small{
+	display: block;
+}
+.m-siteLogo a{
+	margin:0 auto;
+}
+.l-footer .m-siteLogo{
+	float: none;
+}
+.l-footer{
+	padding:35px 0 0 0;
+}
+}
+
+
+
+
+
+
+
